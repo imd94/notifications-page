@@ -1,0 +1,117 @@
+.notification {
+    display: block;
+    color: $dark_grayish_blue;
+    padding: 1.7rem 2rem 1.7rem 8.5rem;
+    position: relative;
+
+    @include xs {
+        padding: 1.5rem 1.5rem 1.5rem 6.9rem;
+    }
+
+    &__avatar {
+        display: block;
+        width: 4.5rem;
+        height: 4.5rem;
+        position: absolute;
+        top: 1.8rem;
+        left: 2rem;
+
+        @include xs {
+            width: 4rem;
+            height: 4rem;
+            left: 1.5rem;
+            top: 1.6rem;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: .4rem;
+        position: relative;
+        line-height: 1.4;
+
+        &--has-other-user-avatar {
+            padding-right: 6.5rem;
+        }
+    }
+
+    &__status {
+        display: none;
+        width: .8rem;
+        height: .8rem;
+        line-height: .8rem;
+        border-radius: 100%;
+        background-color: $primary_color_1;
+        margin-left: .5rem;
+    }
+
+    &__object {
+        transition: color .3s ease;
+
+        &--username {
+            color: $very_dark_blue;
+
+            &:hover {
+                color: $primary_color_2;
+            }
+        }
+
+        &--post {
+            color: $dark_grayish_blue;
+
+            &:hover {
+                color: $primary_color_2;
+            }
+        }
+
+        &--group {
+            color: $primary_color_2;
+        }
+
+        &--other-user-avatar {
+            display: block;
+            border-radius: .9rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: border .3s ease;
+            border: 2px solid transparent;
+
+            &:hover {
+                border-color: $light_grayish_blue_1;
+            }
+
+            img {
+                display: block;
+                width: 4.5rem;
+                height: 4.5rem;
+
+                @include xs {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+
+    &__receive-date {
+        color: $grayish_blue;
+    }
+
+    &__message {
+        margin-top: 1.2rem;
+        border: 1px solid $light_grayish_blue_2;
+        border-radius: .4rem;
+        padding: 1.5rem 2rem;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: $light_grayish_blue_1;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+}

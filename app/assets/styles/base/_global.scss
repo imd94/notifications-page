@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // this defines what 1rem is 
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+    padding: 6rem 1.5rem 8.5rem;
+    background-color: $bg_color;
+
+    @include xs {
+        background-color: $white;
+        padding: 2.4rem 0 2.4rem;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $primary_color_2;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: $dark_grayish_blue;
+    margin: 0 0 2rem;
+
+    @include xxs {
+        font-size: 1.5rem;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+strong {
+    font-weight: 800;
+    color: $very_dark_blue;
+}
+
+.attribution {
+    display: none;
+}
