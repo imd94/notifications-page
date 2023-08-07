@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Notifications page preview](./screenshot.jpg)
+![Notifications page preview](./screenshot.png)
 
 ### Links
 
