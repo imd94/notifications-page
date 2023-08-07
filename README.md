@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-notifications-page-used-local-storage-for-saving-state-m-XLrUBysh)
+- Live Site URL: [Live Site](https://imd94.github.io/notifications-page)
 
 ## My process
 
